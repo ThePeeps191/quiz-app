@@ -2,5 +2,23 @@
 {% block title %}Home Page{% endblock %}
 {% block content %}
 <h1>This is a quiz application.</h1>
-<a href='/play'>Do a quiz!</a>
+<h2>There are multiple quizzes you may choose to do. They are listed below:</h2>
+<ul style="font-size: 20px">
+  <li><a href="/quiz">General</a></li>
+  <li><a href="/quiz/geo">General Geography</a>
+    <!--<ul>
+      <li><a href="/quiz/geo/usa">American Geography</a></li>
+      <li><a href="/quiz/geo/can">Canadian Geography</a></li>
+      <!--<li><a href="/quiz/geo/eur">European Geography</a></li>-->
+    </ul>
+    <!--Science stuff will be added later-->
+    <!--<li><a href="/quiz/sci">General Science</a>
+      <ul>
+        <li><a href="/quiz/sci/spce">Astronomy/Space</a></li>
+        <li><a href="/quiz/sci/chem">Chemistry</a></li>
+      </ul>
+    </li>-->
+  </li>
+</ul>
+<h4>Want to see more things on this website? You can suggest things on the <a href="https://github.com/calgary34/QuizApp/issues">GitHub issues page</a> of this project!</h4>
 {% endblock %}

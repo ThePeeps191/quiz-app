@@ -4,7 +4,7 @@
 <h1 id="heading">{{question["name"]}}</h1>
 <h2 id="h2"></h2>
 {% for ans in question["answers"] %}
-<button onclick='check("{{ans}}")' class="btn btn-primary">{{ans}}</button><br>
+<button onclick='check("{{ans}}")' class="btn btn-primary" style="font-size: 20px">{{ans}}</button><br>
 {% endfor %}
 <button onclick='location.reload()' class="btn button-default">Another question</button>
 <script>
