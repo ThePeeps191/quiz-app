@@ -12,14 +12,52 @@ def homepage():
 
 @app.route('/quiz/')
 def quiz():
-	return render_template('quiz.html', question = random.choice(q))
+  question=random.choice(q)
+  question["answers"]=random.sample(question["answers"],len(question["answers"]))
+  return render_template('quiz.html', question = question)
 
 @app.route('/quiz/geo/')
 def quiz_geo():
   ques=[]
   for qu in q:
-    if qu["type"] == "geo-can" or qu["type"] == "geo-usa":
+    if qu["type"] == "geo-can" or qu["type"] == "geo-usa" or qu["type"] == "geo-eur" or qu["type"] == "geo":
       ques.append(qu)
-  return render_template('quiz_geo.html', question = random.choice(ques))
+  question=random.choice(ques)
+  question["answers"]=random.sample(question["answers"],len(question["answers"]))
+  return render_template('quiz.html', question = question)
+
+@app.route('/quiz/geo/can/')
+def quiz_geo_can():
+  ques=[]
+  for qu in q:
+    if qu["type"] == "geo-can":
+      ques.append(qu)
+  question=random.choice(ques)
+  question["answers"]=random.sample(question["answers"],len(question["answers"]))
+  return render_template('quiz.html', question = question)
+
+@app.route('/quiz/geo/usa/')
+def quiz_geo_usa():
+  ques=[]
+  for qu in q:
+    if qu["type"] == "geo-usa":
+      ques.append(qu)
+  question=random.choice(ques)
+  question["answers"]=random.sample(question["answers"],len(question["answers"]))
+  return render_template('quiz.html', question = question)
+
+@app.route('/quiz/geo/eur/')
+def quiz_geo_eur():
+  ques=[]
+  for qu in q:
+    if qu["type"] == "geo-eur":
+      ques.append(qu)
+  question=random.choice(ques)
+  question["answers"]=random.sample(question["answers"],len(question["answers"]))
+  return render_template('quiz.html', question = question)
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 app.run(host='0.0.0.0', port = 8080)

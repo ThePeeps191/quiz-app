@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-{% block title %}{% endblock %}
+{% block title %}Do a Quiz{% endblock %}
 {% block content %}
 <h1 id="heading">{{question["name"]}}</h1>
 <h2 id="h2"></h2>
 {% for ans in question["answers"] %}
 <button onclick='check("{{ans}}")' class="btn btn-primary" style="font-size: 20px">{{ans}}</button><br>
 {% endfor %}
-<button onclick='location.reload()' class="btn button-default">Another question</button>
+<button onclick='location.reload()' class="btn button-default" style="font-size: 20px">Another question</button>
 <script>
 function check(x){
   if(x == "{{question['answer']}}"){
