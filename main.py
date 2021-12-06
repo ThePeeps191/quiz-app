@@ -56,6 +56,36 @@ def quiz_geo_eur():
   question["answers"]=random.sample(question["answers"],len(question["answers"]))
   return render_template('quiz.html', question = question)
 
+@app.route('/quiz/hist/')
+def quiz_hist():
+   ques=[]
+   for qu in q:
+     if qu["type"] == "hist" or qu["type"] == "hist-can" or qu["type"] == "hist-usa":
+       ques.append(qu)
+   question=random.choice(ques)
+   question["answers"]=random.sample(question["answers"],len(question["answers"]))
+   return render_template('quiz.html', question = question)
+
+@app.route('/quiz/hist/can/')
+def quiz_hist_can():
+  ques=[]
+  for qu in q:
+    if qu["type"] == "hist-can":
+      ques.append(qu)
+  question=random.choice(ques)
+  question["answers"]=random.sample(question["answers"],len(question["answers"]))
+  return render_template('quiz.html', question = question)
+
+@app.route('/quiz/hist/usa/')
+def quiz_hist_usa():
+  ques=[]
+  for qu in q:
+    if qu["type"] == "hist-usa":
+      ques.append(qu)
+  question=random.choice(ques)
+  question["answers"]=random.sample(question["answers"],len(question["answers"]))
+  return render_template('quiz.html', question = question)
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
