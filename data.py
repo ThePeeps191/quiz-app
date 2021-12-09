@@ -27,5 +27,5 @@ questions = [
 	{"name" : "Are there rainforests in Europe?", "answers" : ["True","False"], "answer" : "True", "type" : "geo-eur"},
 	{"name" : "Who is the shortest serving American president?", "answers" : ["John F. Kennedy", "James Garfield", "William Henry Harrison", "Zachary Taylor"], "answer" : "William Henry Harrison", "type" : "hist-usa"},
 	{"name" : "How many American presidents were affiliated with the Whig party?", "answers" : ["4", "3", "2", "5"], "answer" : "4", "type" : "hist-usa"},
-	{"name" : "By area, what is the largets borough of New York?", "answers" : ["Brooklyn", "Queens", "Bronx", "Staten Island"], "answer" : "Queens", "type" : "geo-usa"},
+	{"name" : "By area, what is the largest borough of New York?", "answers" : ["Brooklyn", "Queens", "Bronx", "Staten Island"], "answer" : "Queens", "type" : "geo-usa"},
 ]
