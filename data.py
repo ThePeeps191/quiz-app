@@ -24,8 +24,8 @@ questions = [
     {"name" : "What is the oldest university in Canada?", "answers" : ["Université Laval", "University of Toronto", "University of King's College", "McGill University"], "answer" : "Université Laval", "type" : "hist-can"},
     {"name" : "Who is the shortest serving prime minister of Canada?", "answers" : ["John Turner", "Kim Campbell", "Charles Tupper", "Joe Clark"], "answer" : "Charles Tupper", "type" : "hist-can"},
     {"name" : "Who is the longest serving prime minister of Canada?", "answers" : ["Wilfrid Laurier", "John A. McDonald", "Pierre Trudeau", "William Lyon Mackenzie King"], "answer" : "William Lyon Mackenzie King", "type" : "hist-can"},
-	{"name" : "Are there rainforests in Europe?", "answers" : ["True","False"], "answer" : "True", "type" : "geo-eur"},
-	{"name" : "Who is the shortest serving American president?", "answers" : ["John F. Kennedy", "James Garfield", "William Henry Harrison", "Zachary Taylor"], "answer" : "William Henry Harrison", "type" : "hist-usa"},
-	{"name" : "How many American presidents were affiliated with the Whig party?", "answers" : ["4", "3", "2", "5"], "answer" : "4", "type" : "hist-usa"},
-	{"name" : "By area, what is the largest borough of New York?", "answers" : ["Brooklyn", "Queens", "Bronx", "Staten Island"], "answer" : "Queens", "type" : "geo-usa"},
+    {"name" : "Are there rainforests in Europe?", "answers" : ["True","False"], "answer" : "True", "type" : "geo-eur"},
+    {"name" : "Who was the shortest serving American president?", "answers" : ["John F. Kennedy", "James Garfield", "William Henry Harrison", "Zachary Taylor"], "answer" : "William Henry Harrison", "type" : "hist-usa"},
+    {"name" : "How many American presidents were affiliated with the Whig party?", "answers" : ["4", "3", "2", "5"], "answer" : "4", "type" : "hist-usa"},
+    {"name" : "By area, what is the largest borough of New York?", "answers" : ["Brooklyn", "Queens", "Bronx", "Staten Island"], "answer" : "Queens", "type" : "geo-usa"},
 ]
